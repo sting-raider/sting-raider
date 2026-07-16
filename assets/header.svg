@@ -1,0 +1,217 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1200"
+  height="310"
+  viewBox="0 0 1200 310"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">Ali Khan — AI agents, reinforcement learning, and useful systems</title>
+  <desc id="desc">An animated pastel banner with floating sparkles and a small robot.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15152a">
+        <animate
+          attributeName="stop-color"
+          values="#15152a;#2b1f47;#182b3a;#15152a"
+          dur="12s"
+          repeatCount="indefinite"
+        />
+      </stop>
+      <stop offset="50%" stop-color="#412c5c">
+        <animate
+          attributeName="stop-color"
+          values="#412c5c;#5d315f;#244f52;#412c5c"
+          dur="12s"
+          repeatCount="indefinite"
+        />
+      </stop>
+      <stop offset="100%" stop-color="#1d5661">
+        <animate
+          attributeName="stop-color"
+          values="#1d5661;#2b4a79;#573451;#1d5661"
+          dur="12s"
+          repeatCount="indefinite"
+        />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f9a8d4" />
+      <stop offset="50%" stop-color="#d8b4fe" />
+      <stop offset="100%" stop-color="#99f6e4" />
+    </linearGradient>
+
+    <radialGradient id="orb">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#d8b4fe" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#090915" flood-opacity="0.45" />
+    </filter>
+
+    <clipPath id="round">
+      <rect x="8" y="8" width="1184" height="294" rx="34" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect x="8" y="8" width="1184" height="294" rx="34" fill="url(#background)" />
+
+    <circle cx="150" cy="55" r="130" fill="#f9a8d4" opacity="0.08">
+      <animate attributeName="r" values="105;145;105" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1065" cy="265" r="165" fill="#99f6e4" opacity="0.08">
+      <animate attributeName="r" values="135;180;135" dur="9s" repeatCount="indefinite" />
+    </circle>
+
+    <g opacity="0.35">
+      <path d="M0 244 C210 190 335 295 550 235 C760 177 934 228 1200 160" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2">
+        <animate
+          attributeName="d"
+          values="
+            M0 244 C210 190 335 295 550 235 C760 177 934 228 1200 160;
+            M0 220 C180 285 360 180 560 238 C770 300 950 170 1200 220;
+            M0 244 C210 190 335 295 550 235 C760 177 934 228 1200 160
+          "
+          dur="11s"
+          repeatCount="indefinite"
+        />
+      </path>
+      <path d="M0 268 C180 226 380 315 590 248 C790 184 1000 266 1200 210" fill="none" stroke="#d8b4fe" stroke-opacity="0.18" stroke-width="2">
+        <animate
+          attributeName="d"
+          values="
+            M0 268 C180 226 380 315 590 248 C790 184 1000 266 1200 210;
+            M0 252 C205 310 410 205 610 265 C810 325 1010 210 1200 245;
+            M0 268 C180 226 380 315 590 248 C790 184 1000 266 1200 210
+          "
+          dur="13s"
+          repeatCount="indefinite"
+        />
+      </path>
+    </g>
+
+    <g filter="url(#softGlow)">
+      <circle cx="101" cy="205" r="4" fill="#f9a8d4">
+        <animate attributeName="opacity" values="0.25;1;0.25" dur="2.8s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="1090" cy="77" r="5" fill="#99f6e4">
+        <animate attributeName="opacity" values="1;0.2;1" dur="3.3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="962" cy="230" r="3" fill="#d8b4fe">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
+    <g transform="translate(70 55)" filter="url(#shadow)">
+      <rect x="0" y="0" width="170" height="38" rx="19" fill="#ffffff" fill-opacity="0.09" stroke="#ffffff" stroke-opacity="0.15" />
+      <circle cx="22" cy="19" r="5" fill="#99f6e4">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="1.8s" repeatCount="indefinite" />
+      </circle>
+      <text x="38" y="25" fill="#f8fafc" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="16" font-weight="600">
+        sting-raider
+      </text>
+    </g>
+
+    <text
+      x="70"
+      y="156"
+      fill="#ffffff"
+      font-family="Segoe UI, Inter, Arial, sans-serif"
+      font-size="65"
+      font-weight="750"
+      letter-spacing="-1.5"
+    >
+      hey, i'm Ali
+    </text>
+
+    <rect x="70" y="174" width="490" height="5" rx="2.5" fill="url(#shine)">
+      <animate attributeName="width" values="150;490;150" dur="6s" repeatCount="indefinite" />
+    </rect>
+
+    <text
+      x="70"
+      y="220"
+      fill="#e9e7f7"
+      font-family="Segoe UI, Inter, Arial, sans-serif"
+      font-size="24"
+      font-weight="500"
+    >
+      AI agents  •  reinforcement learning  •  systems that ship
+    </text>
+
+    <text
+      x="70"
+      y="258"
+      fill="#cbd5e1"
+      font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+      font-size="16"
+    >
+      turning suspiciously ambitious ideas into working software
+    </text>
+
+    <g transform="translate(925 70)" filter="url(#shadow)">
+      <g>
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0 0;0 -8;0 0"
+          dur="3.8s"
+          repeatCount="indefinite"
+        />
+
+        <line x1="105" y1="18" x2="105" y2="42" stroke="#d8b4fe" stroke-width="6" stroke-linecap="round" />
+        <circle cx="105" cy="12" r="9" fill="#f9a8d4">
+          <animate attributeName="r" values="7;10;7" dur="1.7s" repeatCount="indefinite" />
+        </circle>
+
+        <rect x="20" y="42" width="170" height="130" rx="38" fill="#f8fafc" fill-opacity="0.94" />
+        <rect x="38" y="64" width="134" height="74" rx="26" fill="#27233f" />
+
+        <ellipse cx="78" cy="101" rx="12" ry="17" fill="#99f6e4">
+          <animate attributeName="ry" values="17;17;2;17;17" keyTimes="0;0.42;0.5;0.58;1" dur="4.5s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="132" cy="101" rx="12" ry="17" fill="#f9a8d4">
+          <animate attributeName="ry" values="17;17;2;17;17" keyTimes="0;0.42;0.5;0.58;1" dur="4.5s" repeatCount="indefinite" />
+        </ellipse>
+
+        <path d="M78 145 Q105 164 132 145" fill="none" stroke="#6d5d9e" stroke-width="6" stroke-linecap="round" />
+
+        <rect x="48" y="166" width="114" height="29" rx="14.5" fill="#d8b4fe" />
+        <circle cx="71" cy="180.5" r="5" fill="#ffffff" opacity="0.8" />
+        <circle cx="105" cy="180.5" r="5" fill="#ffffff" opacity="0.8" />
+        <circle cx="139" cy="180.5" r="5" fill="#ffffff" opacity="0.8" />
+      </g>
+    </g>
+
+    <g transform="translate(885 42)">
+      <path d="M0 -10 L3 -3 L10 0 L3 3 L0 10 L-3 3 L-10 0 L-3 -3 Z" fill="#f9a8d4">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite" />
+      </path>
+    </g>
+    <g transform="translate(1135 210)">
+      <path d="M0 -13 L4 -4 L13 0 L4 4 L0 13 L-4 4 L-13 0 L-4 -4 Z" fill="#99f6e4">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="6s" repeatCount="indefinite" />
+      </path>
+    </g>
+    <g transform="translate(820 248)">
+      <path d="M0 -8 L2.5 -2.5 L8 0 L2.5 2.5 L0 8 L-2.5 2.5 L-8 0 L-2.5 -2.5 Z" fill="#d8b4fe">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
+      </path>
+    </g>
+  </g>
+
+  <rect x="8" y="8" width="1184" height="294" rx="34" fill="none" stroke="#ffffff" stroke-opacity="0.12" />
+</svg>
