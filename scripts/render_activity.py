@@ -58,7 +58,7 @@ def render():
     recent = days[-364:]
     weeks = [sum(d['count'] for d in recent[i:i+7]) for i in range(0,364,7)]
     colors = ['#19191f','#38305f','#6655a4','#a383e6','#ffda6a']
-    s = ['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="630" viewBox="0 0 1000 630" role="img" aria-labelledby="title desc"><title id="title">Contribution SAVE file</title><desc id="desc">GitHub contribution calendar, weekly totals, and all-time public authored pull requests.</desc><style>text{font-family:Courier New,monospace}.scan{animation:scan 7s linear infinite}@keyframes scan{from{transform:translateX(0)}to{transform:translateX(860px)}}@media(prefers-reduced-motion:reduce){.scan{animation:none;opacity:0}}</style><rect width="1000" height="630" fill="#08080d"/><rect x="12" y="12" width="976" height="606" fill="none" stroke="#ffffff" stroke-width="2"/>']
+    s = ['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="630" viewBox="0 0 1000 630" role="img" aria-labelledby="title desc"><title id="title">Contribution SAVE file</title><desc id="desc">GitHub contribution calendar, weekly totals, and all-time public authored pull requests.</desc><style>text{font-family:Courier New,monospace}</style><rect width="1000" height="630" fill="#08080d"/><rect x="12" y="12" width="976" height="606" fill="none" stroke="#ffffff" stroke-width="2"/>']
     def text(x,y,value,size=17,color='#eeeeee'):
         s.append(f'<text x="{x}" y="{y}" font-size="{size}" fill="{color}">{html.escape(str(value))}</text>')
     text(40,50,'* SAVE FILE / CONTRIBUTION HISTORY',22,'#ffda6a')
@@ -78,7 +78,7 @@ def render():
     for i,value in enumerate(weeks):
         h=120*value/peak
         s.append(f'<rect x="{55+i*17}" y="{520-h:.1f}" width="12" height="{max(h,1):.1f}" fill="{colors[4] if value==peak else colors[3]}"><title>Week {i+1}: {value} contributions</title></rect>')
-    s.append('<path d="M55 522H944" stroke="#484254"/><rect class="scan" x="55" y="393" width="2" height="130" fill="#ffffff" opacity=".4"/>')
+    s.append('<path d="M55 522H944" stroke="#484254"/>')
     text(55,548,f'Peak week: {peak:,} contributions',14,'#b9a8e0')
     text(55,580,'Source: public GitHub calendar + PR search. Contributions include more than commits.',13,'#aaa5b7')
     text(55,600,'Updated '+dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')+' / refreshes daily',13,'#aaa5b7')
