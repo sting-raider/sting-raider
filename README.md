@@ -16,7 +16,8 @@ I'm **Ali** — a Computer Science student at **VIT Vellore** ('27) who likes bu
 
 - 🧭 Building **[RoleAtlas](https://github.com/sting-raider/RoleAtlas)** — a qualification-first job discovery workspace with its own Rust crawler fleet.
 - 🛡️ Growing **[AegisFlow](https://github.com/sting-raider/AegisFlow)** — a network intrusion detection system that publishes every one of its own evaluation results, passing or not.
-- 🤖 On the record: a PPO agent that drives **F1 22** from raw UDP telemetry, and a UR10e arm training to pick things up in Isaac Lab.
+- 🎮 Working on **[Plaid](https://github.com/sting-raider/Plaid)** — researching automatic N64 ROM-to-native recompilation.
+- 🤖 On the record: a **[PPO agent that drives F1 22](https://github.com/sting-raider/f1-rl-agent)** from raw UDP telemetry, and a **[UR10e arm learning pick-and-place](https://sting-raider.github.io/portfolio/projects/robotic-arm/)** in Isaac Lab.
 - 🧰 I care about measurable evaluation, traceable AI outputs, privacy-friendly defaults, and software people can actually run.
 - 🌱 Open to internships and early-career **SWE / AI engineering** roles — [résumé here](https://github.com/sting-raider/Resume/blob/main/Ali_Sufiyan_Khan_Resume.pdf).
 
@@ -79,7 +80,7 @@ I'm **Ali** — a Computer Science student at **VIT Vellore** ('27) who likes bu
       <p>
         An experimental toolchain aiming to discover executable code in N64 ROMs and
         statically recompile it into native x86-64 / ARM64 applications. Currently building
-        the Rust discovery foundation: control-flow analysis, trace evidence, and
+        the <a href="https://github.com/sting-raider/Plaid/blob/main/docs/STATUS.md">Rust discovery foundation</a>: control-flow analysis, trace evidence, and
         fail-closed verification. Whole-ROM closure and native execution are still ahead.
       </p>
       <p align="center">
@@ -101,7 +102,7 @@ I'm **Ali** — a Computer Science student at **VIT Vellore** ('27) who likes bu
       <p>
         An Isaac Lab pick-and-place system for a UR10e with a Robotiq gripper: a PPO policy learns
         staged reaching, grasping, lifting, and placement. Repo currently private —
-        full write-up lives on the portfolio.
+        <a href="https://sting-raider.github.io/portfolio/projects/robotic-arm/">full write-up lives on the portfolio</a>.
       </p>
       <p align="center">
         <a href="https://sting-raider.github.io/portfolio/projects/robotic-arm/">write-up</a>
@@ -142,8 +143,8 @@ I'm **Ali** — a Computer Science student at **VIT Vellore** ('27) who likes bu
         <sub><code>Python</code> <code>FastAPI</code> <code>Docker SDK</code></sub>
       </td>
       <td width="50%" valign="top">
-        <a href="https://sting-raider.github.io/portfolio/"><b>+ the rest</b></a> — a hybrid K3s
-        edge/cloud cluster spanning on-prem, AWS, and GCP, and an
+        <a href="https://sting-raider.github.io/portfolio/"><b>+ the rest</b></a> — a <a href="https://github.com/sting-raider/hybrid-cloud-k8s-platform">hybrid K3s
+        edge/cloud cluster</a> spanning on-prem, AWS, and GCP, and an
         <a href="https://sting-raider.github.io/portfolio/">Undertale-themed portfolio</a> I may have
         spent too long on.
       </td>
@@ -185,7 +186,7 @@ I'm **Ali** — a Computer Science student at **VIT Vellore** ('27) who likes bu
   </a>
 </p>
 
-<sub>Generated daily from GitHub's public contribution calendar and PR search. PR counts cover public authored PRs; contributions follow GitHub's calendar visibility. Hover over cells and bars in the SVG for exact counts.</sub>
+<sub>Generated daily from GitHub's public contribution calendar and PR search. PR counts cover public authored PRs; contributions follow GitHub's calendar visibility.</sub>
 
 ## tiny engineering manifesto
 
