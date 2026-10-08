@@ -3,16 +3,9 @@
 </p>
 
 <p align="center">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1200&center=true&vCenter=true&width=600&height=40&color=C084FC&lines=%F0%9F%A7%AD+building+RoleAtlas;%F0%9F%9B%A1%EF%B8%8F+training+a+NIDS;%F0%9F%90%8D+teaching+arms+and+cars+to+move"
-    />
-    <img
-      src="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1200&center=true&vCenter=true&width=600&height=40&color=9333EA&lines=%F0%9F%A7%AD+building+RoleAtlas;%F0%9F%9B%A1%EF%B8%8F+training+a+NIDS;%F0%9F%90%8D+teaching+arms+and+cars+to+move"
-      alt="Currently: building RoleAtlas · training a network intrusion detector · teaching arms and cars to move"
-    />
-  </picture>
+  <a href="https://sting-raider.github.io/portfolio/">[ PORTFOLIO ]</a> ·
+  <a href="https://github.com/sting-raider/Resume/blob/main/Ali_Sufiyan_Khan_Resume.pdf">[ RÉSUMÉ ]</a> ·
+  <a href="https://www.linkedin.com/in/ali-khan-4197b1217/">[ LINKEDIN ]</a>
 </p>
 
 ## about me
@@ -183,41 +176,15 @@ I'm **Ali** — a Computer Science student at **VIT Vellore** ('27) who likes bu
   </a>
 </p>
 
-## contribution stats
+## SAVE file · contribution history
 
 <p align="center">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://streak-stats.demolab.com/?user=sting-raider&hide_border=true&background=0D1117&fire=F472B6&ring=C084FC&currStreakLabel=E9D5FF&sideLabels=A78BFA&dates=94A3B8&currStreakNum=E9D5FF&sideNums=C4B5FD"
-    />
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://streak-stats.demolab.com/?user=sting-raider&hide_border=true&background=FFFFFF&fire=DB2777&ring=9333EA&currStreakLabel=7C3AED&sideLabels=7C3AED&dates=6B7280&currStreakNum=6D28D9&sideNums=A855F7"
-    />
-    <img
-      src="https://streak-stats.demolab.com/?user=sting-raider&hide_border=true"
-      alt="GitHub streak stats for sting-raider"
-    />
-  </picture>
+  <a href="https://github.com/sting-raider?tab=overview">
+    <img src="./assets/activity.svg" width="100%" alt="Daily updated contribution heatmap, weekly activity chart, last-year contributions and all-time public PR totals" />
+  </a>
 </p>
 
-<p align="center">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://github-readme-activity-graph.vercel.app/graph?username=sting-raider&bg_color=0D1117&color=E6EDF3&title_color=C084FC&line=F472B6&point=E9D5FF&area=true&area_color=8B5CF633&hide_border=true"
-    />
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://github-readme-activity-graph.vercel.app/graph?username=sting-raider&bg_color=FFFFFF&color=24292F&title_color=9333EA&line=DB2777&point=7C3AED&area=true&area_color=8B5CF622&hide_border=true"
-    />
-    <img
-      src="https://github-readme-activity-graph.vercel.app/graph?username=sting-raider&hide_border=true"
-      alt="Contribution activity graph for sting-raider"
-    />
-  </picture>
-</p>
+<sub>Generated daily from GitHub's public contribution calendar and PR search. PR counts cover public authored PRs; contributions follow GitHub's calendar visibility. Hover over cells and bars in the SVG for exact counts.</sub>
 
 ## tiny engineering manifesto
 
@@ -241,7 +208,7 @@ I'm **Ali** — a Computer Science student at **VIT Vellore** ('27) who likes bu
   </a>
 </p>
 
-## contribution garden 🐍
+## bonus encounter · contribution snake
 
 <p align="center">
   <picture>

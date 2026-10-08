@@ -1,251 +1,30 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="1200"
-  height="310"
-  viewBox="0 0 1200 310"
-  role="img"
-  aria-labelledby="title desc"
->
-  <title id="title">Ali Khan — AI agents, reinforcement learning, and systems that ship</title>
-  <desc id="desc">An animated dark banner with drifting sparkles, a scanning light sweep, and a small friendly robot.</desc>
-
-  <defs>
-    <linearGradient id="background" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0e1a">
-        <animate
-          attributeName="stop-color"
-          values="#0b0e1a;#1d1440;#0d2333;#0b0e1a"
-          dur="14s"
-          repeatCount="indefinite"
-        />
-      </stop>
-      <stop offset="52%" stop-color="#33245c">
-        <animate
-          attributeName="stop-color"
-          values="#33245c;#4c2663;#1b3d51;#33245c"
-          dur="14s"
-          repeatCount="indefinite"
-        />
-      </stop>
-      <stop offset="100%" stop-color="#134e4a">
-        <animate
-          attributeName="stop-color"
-          values="#134e4a;#28356b;#48284f;#134e4a"
-          dur="14s"
-          repeatCount="indefinite"
-        />
-      </stop>
-    </linearGradient>
-
-    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f472b6" />
-      <stop offset="50%" stop-color="#c084fc" />
-      <stop offset="100%" stop-color="#5eead4" />
-    </linearGradient>
-
-    <linearGradient id="scan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.09" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
-    </linearGradient>
-
-    <radialGradient id="orb">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
-    </radialGradient>
-
-    <pattern id="dotgrid" width="26" height="26" patternUnits="userSpaceOnUse">
-      <circle cx="1.6" cy="1.6" r="1.2" fill="#ffffff" />
-    </pattern>
-
-    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="7" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
-    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#06070f" flood-opacity="0.5" />
-    </filter>
-
-    <clipPath id="round">
-      <rect x="8" y="8" width="1184" height="294" rx="34" />
-    </clipPath>
-  </defs>
-
-  <g clip-path="url(#round)">
-    <rect x="8" y="8" width="1184" height="294" rx="34" fill="url(#background)" />
-
-    <!-- faint engineering dot grid -->
-    <rect x="8" y="8" width="1184" height="294" fill="url(#dotgrid)" opacity="0.05" />
-
-    <!-- slow breathing orbs -->
-    <circle cx="150" cy="55" r="130" fill="#f472b6" opacity="0.07">
-      <animate attributeName="r" values="105;148;105" dur="9s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="1065" cy="265" r="165" fill="#5eead4" opacity="0.07">
-      <animate attributeName="r" values="135;182;135" dur="10s" repeatCount="indefinite" />
-    </circle>
-
-    <!-- flowing signal waves -->
-    <g opacity="0.35">
-      <path d="M0 244 C210 190 335 295 550 235 C760 177 934 228 1200 160" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2">
-        <animate
-          attributeName="d"
-          values="
-            M0 244 C210 190 335 295 550 235 C760 177 934 228 1200 160;
-            M0 220 C180 285 360 180 560 238 C770 300 950 170 1200 220;
-            M0 244 C210 190 335 295 550 235 C760 177 934 228 1200 160
-          "
-          dur="11s"
-          repeatCount="indefinite"
-        />
-      </path>
-      <path d="M0 268 C180 226 380 315 590 248 C790 184 1000 266 1200 210" fill="none" stroke="#c084fc" stroke-opacity="0.18" stroke-width="2">
-        <animate
-          attributeName="d"
-          values="
-            M0 268 C180 226 380 315 590 248 C790 184 1000 266 1200 210;
-            M0 252 C205 310 410 205 610 265 C810 325 1010 210 1200 245;
-            M0 268 C180 226 380 315 590 248 C790 184 1000 266 1200 210
-          "
-          dur="13s"
-          repeatCount="indefinite"
-        />
-      </path>
-    </g>
-
-    <!-- scanning light sweep -->
-    <rect x="0" y="8" width="260" height="294" fill="url(#scan)" transform="skewX(-16)">
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        additive="sum"
-        values="-360 0;1560 0"
-        dur="7.5s"
-        repeatCount="indefinite"
-      />
-    </rect>
-
-    <!-- glowing dust -->
-    <g filter="url(#softGlow)">
-      <circle cx="101" cy="205" r="4" fill="#f472b6">
-        <animate attributeName="opacity" values="0.25;1;0.25" dur="2.8s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="1090" cy="77" r="5" fill="#5eead4">
-        <animate attributeName="opacity" values="1;0.2;1" dur="3.3s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="962" cy="230" r="3" fill="#c084fc">
-        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="420" cy="62" r="3" fill="#f9a8d4">
-        <animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.9s" repeatCount="indefinite" />
-      </circle>
-    </g>
-
-    <!-- handle chip -->
-    <g transform="translate(70 55)" filter="url(#shadow)">
-      <rect x="0" y="0" width="170" height="38" rx="19" fill="#ffffff" fill-opacity="0.09" stroke="#ffffff" stroke-opacity="0.15" />
-      <circle cx="22" cy="19" r="5" fill="#5eead4">
-        <animate attributeName="opacity" values="0.35;1;0.35" dur="1.8s" repeatCount="indefinite" />
-      </circle>
-      <text x="38" y="25" fill="#f8fafc" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="16" font-weight="600">
-        sting-raider
-      </text>
-    </g>
-
-    <text
-      x="70"
-      y="156"
-      fill="#ffffff"
-      font-family="Segoe UI, Inter, Arial, sans-serif"
-      font-size="65"
-      font-weight="750"
-      letter-spacing="-1.5"
-    >
-      hey, i'm Ali
-    </text>
-
-    <rect x="70" y="174" width="490" height="5" rx="2.5" fill="url(#shine)">
-      <animate attributeName="width" values="150;490;150" dur="6s" repeatCount="indefinite" />
-    </rect>
-
-    <text
-      x="70"
-      y="220"
-      fill="#ece9fb"
-      font-family="Segoe UI, Inter, Arial, sans-serif"
-      font-size="24"
-      font-weight="500"
-    >
-      AI agents  •  reinforcement learning  •  systems that ship
-    </text>
-
-    <text
-      x="70"
-      y="258"
-      fill="#cbd5e1"
-      font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
-      font-size="16"
-    >
-      $ turning suspiciously ambitious ideas into working software<tspan dx="6" fill="#f472b6" fill-opacity="1">▍<animate attributeName="fill-opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite" /></tspan>
-    </text>
-
-    <!-- robot friend -->
-    <g transform="translate(925 70)" filter="url(#shadow)">
-      <g>
-        <animateTransform
-          attributeName="transform"
-          type="translate"
-          values="0 0;0 -8;0 0"
-          dur="3.8s"
-          repeatCount="indefinite"
-        />
-
-        <line x1="105" y1="18" x2="105" y2="42" stroke="#c084fc" stroke-width="6" stroke-linecap="round" />
-        <circle cx="105" cy="12" r="9" fill="#f472b6">
-          <animate attributeName="r" values="7;10;7" dur="1.7s" repeatCount="indefinite" />
-        </circle>
-
-        <rect x="20" y="42" width="170" height="130" rx="38" fill="#f8fafc" fill-opacity="0.94" />
-        <rect x="38" y="64" width="134" height="74" rx="26" fill="#221b40" />
-
-        <ellipse cx="78" cy="101" rx="12" ry="17" fill="#5eead4">
-          <animate attributeName="ry" values="17;17;2;17;17" keyTimes="0;0.42;0.5;0.58;1" dur="4.5s" repeatCount="indefinite" />
-        </ellipse>
-        <ellipse cx="132" cy="101" rx="12" ry="17" fill="#f472b6">
-          <animate attributeName="ry" values="17;17;2;17;17" keyTimes="0;0.42;0.5;0.58;1" dur="4.5s" repeatCount="indefinite" />
-        </ellipse>
-
-        <path d="M78 145 Q105 164 132 145" fill="none" stroke="#6d5d9e" stroke-width="6" stroke-linecap="round" />
-
-        <rect x="48" y="166" width="114" height="29" rx="14.5" fill="#c084fc" />
-        <circle cx="71" cy="180.5" r="5" fill="#ffffff" opacity="0.8" />
-        <circle cx="105" cy="180.5" r="5" fill="#ffffff" opacity="0.8" />
-        <circle cx="139" cy="180.5" r="5" fill="#ffffff" opacity="0.8" />
-      </g>
-    </g>
-
-    <!-- pinwheel sparkles -->
-    <g transform="translate(885 42)">
-      <path d="M0 -10 L3 -3 L10 0 L3 3 L0 10 L-3 3 L-10 0 L-3 -3 Z" fill="#f472b6">
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite" />
-      </path>
-    </g>
-    <g transform="translate(1135 210)">
-      <path d="M0 -13 L4 -4 L13 0 L4 4 L0 13 L-4 4 L-13 0 L-4 -4 Z" fill="#5eead4">
-        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="6s" repeatCount="indefinite" />
-      </path>
-    </g>
-    <g transform="translate(820 248)">
-      <path d="M0 -8 L2.5 -2.5 L8 0 L2.5 2.5 L0 8 L-2.5 2.5 L-8 0 L-2.5 -2.5 Z" fill="#c084fc">
-        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
-      </path>
-    </g>
-  </g>
-
-  <rect x="8" y="8" width="1184" height="294" rx="34" fill="none" stroke="#ffffff" stroke-opacity="0.12" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400" role="img" aria-labelledby="title desc"><title id="title">Ali Khan — stay determined, keep building</title><desc id="desc">A pixel adventurer explores a starry room while a red soul dodges projectiles and a golden SAVE point spins. Animation can be disabled with reduced motion.</desc>
+<style>
+text{font-family:Courier New,monospace}.walk{animation:walk 12s linear infinite}.feet{animation:feet .32s steps(2,end) infinite}.soul{animation:dodge 8s linear infinite}.shot{animation:shot 4s linear infinite}.shot2{animation:shot 4s 2s linear infinite}.save{transform-box:fill-box;transform-origin:center;animation:save 3s steps(8,end) infinite}.spark{animation:spark 3s ease-out infinite}.cursor{animation:blink 1s steps(2,end) infinite}.star{animation:twinkle 4s steps(3,end) infinite}.trail{animation:trail 8s linear infinite}
+@keyframes walk{0%,15%{transform:translateX(0)}45%,65%{transform:translateX(135px)}95%,100%{transform:translateX(0)}}
+@keyframes feet{50%{transform:translateY(-3px)}}
+@keyframes dodge{0%,100%{transform:translate(0,0)}15%{transform:translate(55px,-36px)}30%{transform:translate(100px,6px)}45%{transform:translate(55px,45px)}60%{transform:translate(-35px,26px)}75%{transform:translate(-75px,-30px)}90%{transform:translate(-25px,-48px)}}
+@keyframes trail{0%,100%{transform:translate(0,0);opacity:0}15%{transform:translate(45px,-30px);opacity:.3}30%{transform:translate(90px,0);opacity:.15}45%{transform:translate(65px,40px);opacity:.3}60%{transform:translate(-25px,30px);opacity:.15}75%{transform:translate(-65px,-20px);opacity:.3}90%{transform:translate(-35px,-45px);opacity:.15}}
+@keyframes shot{0%{transform:translateX(0);opacity:0}5%,90%{opacity:1}100%{transform:translateX(-250px);opacity:0}}
+@keyframes save{50%{transform:rotate(180deg) scale(.65)}100%{transform:rotate(360deg)}}
+@keyframes spark{0%{opacity:0;transform:translateY(0)}25%{opacity:1}100%{opacity:0;transform:translateY(-50px)}}
+@keyframes blink{50%{opacity:0}}@keyframes twinkle{50%{opacity:.2}}
+@media(prefers-reduced-motion:reduce){.walk,.feet,.soul,.shot,.shot2,.save,.spark,.cursor,.star,.trail{animation:none}.shot,.shot2,.trail{opacity:0}}
+</style><defs><clipPath id="arena"><rect x="705" y="95" width="247" height="160"/></clipPath><path id="heart" d="M-12 -8h8v4h8v-4h8v12H8v4H4v4H0v-4h-4V4h-4z"/></defs>
+<rect width="1000" height="400" fill="#08080d"/><rect x="12" y="12" width="976" height="376" fill="none" stroke="#fff" stroke-width="3"/>
+<text x="42" y="55" fill="#b9a8e0" font-size="15">STING-RAIDER // AI · REINFORCEMENT LEARNING · SYSTEMS</text>
+<text x="42" y="125" fill="#fff" font-size="59" font-weight="bold">ALI KHAN</text>
+<text x="42" y="169" fill="#ffda6a" font-size="21">* Stay determined. Keep building.</text>
+<text x="42" y="211" fill="#ccc6d9" font-size="17">Teaching machines to drive, grasp, and think.</text>
+<text x="42" y="241" fill="#ccc6d9" font-size="17">Making the results public, failures included.</text>
+<rect x="705" y="95" width="247" height="160" fill="#0d0c16" stroke="#fff" stroke-width="3"/>
+<text x="709" y="80" fill="#b9a8e0" font-size="13">SOUL / TRAINING IN PROGRESS</text>
+<g clip-path="url(#arena)"><g transform="translate(814 171)"><use class="trail" href="#heart" fill="#a383e6"/><use class="soul" href="#heart" fill="#ff465c"/></g>
+<g transform="translate(942 132)"><g class="shot" fill="#fff"><rect width="8" height="36"/><rect x="-4" y="-4" width="16" height="8"/><rect x="-4" y="32" width="16" height="8"/></g></g>
+<g transform="translate(942 216)"><g class="shot2" fill="#68ddeb"><rect width="8" height="26"/><rect x="-4" y="-4" width="16" height="8"/><rect x="-4" y="22" width="16" height="8"/></g></g></g>
+<path d="M32 335H968" stroke="#504360" stroke-width="2"/>
+<text x="42" y="371" fill="#ffda6a" font-size="17">* You're filled with the urge to ship.</text><rect class="cursor" x="488" y="355" width="9" height="18" fill="#ffda6a"/>
+<g transform="translate(638 272)"><g class="walk"><g shape-rendering="crispEdges"><path fill="#352b47" d="M0 0h32v8h8v28H0z"/><path fill="#e9c18e" d="M0 12h32v24H0z"/><path fill="#352b47" d="M0 12h8v8H0zm24 0h8v8h-8z"/><path fill="#08080d" d="M8 24h4v4H8zm12 0h4v4h-4z"/><path fill="#9970cd" d="M0 36h32v20H0z"/><path fill="#6499c9" d="M0 44h32v8H0z"/><path fill="#e9c18e" d="M-8 36h8v16h-8zm40 0h8v16h-8z"/><g class="feet" fill="#433854"><path d="M0 56h12v8H0zm20 0h12v8H20z"/></g></g></g></g>
+<g transform="translate(930 301)"><path class="save" d="M0 -24h6v12h6v6h12v6H12v6H6v12H0V6h-6V0h-12v-6h12v-6H0z" fill="#ffda6a"/></g>
+<g class="spark" fill="#ffda6a"><rect x="910" y="284" width="4" height="4"/><rect x="947" y="300" width="4" height="4"/><rect x="920" y="316" width="4" height="4"/></g>
+<path class="star" style="animation-delay:2s" d="M630 88v8m-4 -4h8" stroke="#a383e6"/><path class="star" style="animation-delay:2s" d="M666 136v8m-4 -4h8" stroke="#a383e6"/><path class="star" style="animation-delay:2s" d="M594 278v8m-4 -4h8" stroke="#a383e6"/><path class="star" style="animation-delay:2s" d="M902 40v8m-4 -4h8" stroke="#a383e6"/><path class="star" style="animation-delay:0s" d="M960 282v8m-4 -4h8" stroke="#a383e6"/><path class="star" style="animation-delay:0s" d="M564 59v8m-4 -4h8" stroke="#a383e6"/></svg>
