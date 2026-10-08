@@ -71,23 +71,24 @@ I'm **Ali** — a Computer Science student at **VIT Vellore** ('27) who likes bu
   <tr>
     <td width="50%" valign="top">
       <h3 align="center">
-        <a href="https://github.com/sting-raider/f1-rl-agent">F1 22 RL Agent</a>
+        <a href="https://github.com/sting-raider/Plaid">Plaid</a>
       </h3>
       <p align="center">
-        <sub>a neural network with a driver's license</sub>
+        <sub>N64 ROMs to native applications — a research work in progress</sub>
       </p>
       <p>
-        A PPO driving agent reading live UDP telemetry from F1 22 — 18-dim observations with frame stacking —
-        and sending continuous steering, throttle, and braking through a virtual controller.
-        Composable rewards, TensorBoard curves, train/eval CLIs.
+        An experimental toolchain aiming to discover executable code in N64 ROMs and
+        statically recompile it into native x86-64 / ARM64 applications. Currently building
+        the Rust discovery foundation: control-flow analysis, trace evidence, and
+        fail-closed verification. Whole-ROM closure and native execution are still ahead.
       </p>
       <p align="center">
-        <a href="https://github.com/sting-raider/f1-rl-agent">repo</a> ·
-        <a href="https://sting-raider.github.io/portfolio/projects/f1-agent/">write-up</a>
+        <a href="https://github.com/sting-raider/Plaid">repo</a> ·
+        <a href="https://github.com/sting-raider/Plaid/blob/main/docs/STATUS.md">research status</a>
       </p>
       <p align="center">
-        <code>Python</code> <code>Gymnasium</code> <code>Stable-Baselines3</code>
-        <code>vgamepad</code> <code>TensorBoard</code>
+        <code>Rust</code> <code>Python</code> <code>MIPS</code>
+        <code>Static Recompilation</code> <code>N64</code>
       </p>
     </td>
     <td width="50%" valign="top">
