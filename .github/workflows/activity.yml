@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [scripts/render_activity.py, .github/workflows/activity.yml]
+    paths: [scripts/render_activity.py, scripts/theme.py, 'scripts/fonts/**', .github/workflows/activity.yml]
 permissions:
   contents: write
 concurrency:
